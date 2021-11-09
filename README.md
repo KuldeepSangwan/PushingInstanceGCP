@@ -36,19 +36,26 @@ DockerFile data:
 cmd code:
 
 
-### Step 3 : Writing some coonection code and inserting some data in Database and running some query
-check ConnectionQuery.ipynb file
+### Step 3 : Writing some connection code and inserting some data in Database and running some query
+check Sample Queries.ipynb file
 
 ### Step 4 : Pushing the jupyter Notebook Docker file in GCP
 I have created an API in GCP for the jupyter Notebook
 
 first i have build the container from the docker file then i deployed it using following command
     gcloud builds submit --tag gcr.io/aganithaproject-331503/aganithaproject
+![alt text](https://github.com/KuldeepSangwan/aganithaiminiproject/blob/main/GCPDockerBuild.JPG?raw=true)
+    gcloud run deploy --port 8888 --image gcr.io/aganithaproject-331503/aganithaproject
+![alt text](https://github.com/KuldeepSangwan/aganithaiminiproject/blob/main/GCPDockerDeploy.JPG?raw=true)
 
-    gcloud run deploy --port 8888 --image cr.io/aganithaproject-331503/aganithaproject
+we can access it from - https://aganithaproject-2pdrmgujiq-km.a.run.app/
+![alt text](https://github.com/KuldeepSangwan/aganithaiminiproject/blob/main/GCPDockernotebook.JPG?raw=true)
 
-we can access it from - 
+### Step 5 : Deploy the Postgresql server on GCP
 
+So in this step i had few erros.I tried to deploy the Docker image of Postgresql in Compute engine VM but i was not able to connect and i also try to create Postgresql server instance in GCP Database but that also i was not able to connect
+Just pasting the screenshot of Postgresql server instance
+![alt text](https://github.com/KuldeepSangwan/aganithaiminiproject/blob/main/postgreVM.JPG?raw=true)
 
 
               
