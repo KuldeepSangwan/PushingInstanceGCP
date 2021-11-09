@@ -34,6 +34,7 @@ DockerFile data:
       ENTRYPOINT ["jupyter","notebook","--ip=*"]
 
 cmd code:
+![alt text](https://github.com/KuldeepSangwan/aganithaiminiproject/blob/main/notebook1.JPG?raw=true)
 
 
 ### Step 3 : Writing some connection code and inserting some data in Database and running some query
