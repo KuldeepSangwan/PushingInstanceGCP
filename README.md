@@ -1,3 +1,2 @@
 # aganithaiminiproject
-## interniship at aganitha
-## Step 1
+### Step 1
