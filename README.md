@@ -1,4 +1,4 @@
-# aganithaiminiproject
+# How to push POstgresql and Jupyter Notebook into GCP instance
 ### Step 1 : Setup Postgres in a docker container in local
 Pulling docker file of Postgres 
 running the container 
